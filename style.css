@@ -1,1 +1,71 @@
+/* Reset default browser styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+/* Main content styling */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Button styling with hover effect */
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjustments for different screen sizes */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+}
+```
+
+### `app.js`
+
+This JavaScript file enhances interactivity by adding an event listener to a button, allowing actions when the button is clicked:
+
+```javascript
+// Ensure DOM is fully loaded before running scripts
+document.addEventListener('DOMContentLoaded', function() {
+    // Select the button using its ID
+    const button = document.getElementById('alertButton');
+
+    // Attach a 'click' event listener to the button
+    button.addEventListener('click', function() {
+        // Display an alert when the button is clicked
+        alert('Button clicked!');
+    });
+});
+```
